@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking site</title>
+    <style>
+        /* CSS reset start */
+        /* Box sizing rules */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        /* Prevent font size inflation */
+        html {
+            -moz-text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        /* Remove default margin in favour of better control in authored CSS */
+        body, h1, h2, h3, h4, p,
+        figure, blockquote, dl, dd {
+            margin-block-end: 0;
+        }
+
+        /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+        ul[role='list'],
+        ol[role='list'] {
+            list-style: none;
+        }
+
+        /* Set core body defaults */
+        body {
+            min-height: 100vh;
+            line-height: 1.5;
+        }
+
+        /* Set shorter line heights on headings and interactive elements */
+        h1, h2, h3, h4,
+        button, input, label {
+            line-height: 1.1;
+        }
+
+        /* Balance text wrapping on headings */
+        h1, h2,
+        h3, h4 {
+            text-wrap: balance;
+        }
+
+        /* A elements that don't have a class get default styles */
+        a:not([class]) {
+            text-decoration-skip-ink: auto;
+            color: currentColor;
+        }
+
+        /* Make images easier to work with */
+        img,
+        picture {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Inherit fonts for inputs and buttons */
+        input, button,
+        textarea, select {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        /* Make sure textareas without a rows attribute are not tiny */
+        textarea:not([rows]) {
+            min-height: 10em;
+        }
+
+        /* Anything that has been anchored to should have extra scroll margin */
+        :target {
+            scroll-margin-block: 5ex;
+        }
+        /* CSS reset end*/
+
+        :root {
+            color-scheme: light dark;
+        }
+
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background-color: green;
+            font-weight: 600;
+            padding: 1em;
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .page-wrapper {
+            min-height: 100%;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        main, footer {
+            padding: 2% 5%;
+        }
+
+        article p {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <a href="#">Cooking site.</a>
+        </header>
+        <main>
+            <small>This site is about cooking receipts from all around the world.</small>
+            <hr>
+            <article>
+                <h1>Recipe of the day</h1>
+
+                <h2>Brown-Butter Orzo With Butternut Squash</h2>
+                <cite><a href="https://cooking.nytimes.com/recipes/1022791-brown-butter-orzo-with-butternut-squash">By Melissa Clark</a></cite>
+
+                <p>
+                    In this autumnal one-pot meal, orzo is cooked with stock and butternut squash until it’s tender and creamy, a little like risotto but without as much stirring.
+                    <em>45 minutes</em>
+                </p>
+            </article>
+            <article>
+                <h1>From our video series</h1>
+                <h2>Vaughn Makes the Famous Cranberry Curd Tart (+2 Twists on the Recipe!)</h2>
+                <cite><a href="https://cooking.nytimes.com/watch/november-bake-time-cranberry-curd-tart">By Bake Time</a></cite>
+                <p>
+                    It’s Bake Time, and it’s a cranberry extravaganza! For November’s Monthly Bake, Vaughn shows us how to make the famous cranberry curd tart from David Tanis, as well as his own two variations on the showstopping dessert: portable cranberry bars and a giant crème brûlée (or … cran brûlée, if you will). Make them for Friendsgiving, or Thanksgiving, or any celebration. 
+                    <em>1.5 hours, 3 hours 40 minutes, 4.5 hours</em>
+                </p>
+            </article>
+            <article>
+                <h1>The Best Meal of the Year</h1>
+                <h2>Cheesy Hasselback Potato Gratin</h2>
+                <cite><a href="https://cooking.nytimes.com/recipes/1017724-cheesy-hasselback-potato-gratin">By J. Kenji López-Alt & Emily Weinstein</a></cite>
+                <p>
+                    This golden and glorious mash-up of potato gratin and Hasselback potatoes, from the acclaimed food science writer J. Kenji López-Alt, has been engineered to give you both creamy potato and singed edge in each bite. The principal innovation here is placing the sliced potatoes in the casserole dish vertically, on their edges, rather than laying them flat as in a standard gratin, in order to get those crisp ridges on top. Allow extra time for the task of slicing the potatoes, for which it's helpful to have a mandoline or food processor (though not necessary, strictly speaking). And do buy extra potatoes, just in case; you want to pack the potatoes tightly and keep them standing up straight.
+                    <em>2 hours</em>
+                </p>
+            </article>
+        </main>
+        <footer>
+            <small>Skrypnyk Mykhailo <em>11/09/2026</em></small>
+        </footer>
+    </div>
+</body>
+</html>
