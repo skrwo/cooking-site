@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipts – Cooking site</title>
+    <style>
+        /* CSS reset start */
+        /* Box sizing rules */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        /* Prevent font size inflation */
+        html {
+            -moz-text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+            text-size-adjust: none;
+        }
+
+        /* Remove default margin in favour of better control in authored CSS */
+        body, h1, h2, h3, h4, p,
+        figure, blockquote, dl, dd {
+            margin-block-end: 0;
+        }
+
+        /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+        ul[role='list'],
+        ol[role='list'] {
+            list-style: none;
+        }
+
+        /* Set core body defaults */
+        body {
+            min-height: 100vh;
+            line-height: 1.5;
+        }
+
+        /* Set shorter line heights on headings and interactive elements */
+        h1, h2, h3, h4,
+        button, input, label {
+            line-height: 1.1;
+        }
+
+        /* Balance text wrapping on headings */
+        h1, h2,
+        h3, h4 {
+            text-wrap: balance;
+        }
+
+        /* A elements that don't have a class get default styles */
+        a:not([class]) {
+            text-decoration-skip-ink: auto;
+            color: currentColor;
+        }
+
+        /* Make images easier to work with */
+        img,
+        picture {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Inherit fonts for inputs and buttons */
+        input, button,
+        textarea, select {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        /* Make sure textareas without a rows attribute are not tiny */
+        textarea:not([rows]) {
+            min-height: 10em;
+        }
+
+        /* Anything that has been anchored to should have extra scroll margin */
+        :target {
+            scroll-margin-block: 5ex;
+        }
+        /* CSS reset end*/
+
+        :root {
+            color-scheme: light dark;
+        }
+
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background-color: green;
+            font-weight: 600;
+            padding: 1em;
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .page-wrapper {
+            min-height: 100%;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        main, footer {
+            padding: 2% 5%;
+        }
+
+        article div {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <a href="/">Cooking site.</a>
+        </header>
+        <main>
+            <small>This site is about cooking recipes from all around the world. You're on the receipts page</small>
+            <hr>
+            <article>
+                <h1>Recipe of the day</h1>
+
+                <h2>Brown-Butter Orzo With Butternut Squash</h2>
+                <cite><a href="https://cooking.nytimes.com/recipes/1022791-brown-butter-orzo-with-butternut-squash">By Melissa Clark</a></cite>
+
+                <div>
+                    <em>45 minutes</em>
+                    <h3>Ingredients</h3>
+                    Yield: 4 servings
+                    <ul>
+                        <li>4 tablespoons unsalted butter</li>
+                        <li>¾ cup thinly sliced shallots (2 to 3), or use onion or leek</li>
+                        <li>1 small (2-pound) butternut squash, peeled, seeded and cut into ¾-inch cubes (3 cups)</li>
+                        <li>1 tablespoon finely chopped fresh sage leaves, or 2 teaspoons chopped rosemary or marjoram, plus more for serving if you like</li>
+                        <li>1 teaspoon fine sea salt or table salt, plus more as needed</li>
+                        <li>¼ teaspoon freshly ground black pepper, plus more for serving</li>
+                        <li>¼ teaspoon red-pepper flakes, plus more for serving</li>
+                        <li>3 cups vegetable stock or chicken stock</li>
+                        <li>1 ½ cup uncooked orzo</li>
+                        <li>1 lemon, zested and halved</li>
+                        <li>2 tablespoons grated Parmesan, plus more for serving</li>
+                        <li>½ cup whole-milk ricotta (optional)</li>
+                    </ul>
+                    <h3>Preparation</h3>
+                    Step 1
+                    In a medium Dutch oven, or a large (12-inch) skillet, melt butter over medium heat. Cook, swirling occasionally, until the foam subsides, the milk solids turn golden brown and it smells nutty and toasty, 3 to 4 minutes. (Watch carefully to see that it doesn’t burn.)
+                    
+                    Step 2
+                    Stir in shallots and cook, stirring occasionally, until slightly softened, about 2 minutes. Add squash, sage, a large pinch of salt, the ¼ teaspoon black pepper and the ¼ teaspoon red-pepper flakes, and cook until squash is golden at the edges and begins to soften, 12 to 17 minutes.
+                    
+                    Step 3
+                    Add stock and bring to a simmer. Stir in orzo, lemon zest and the 1 teaspoon salt. Cover the pan and simmer over medium-low heat until orzo is just tender and most of the liquid is absorbed, 14 to 18 minutes, stirring once or twice. If the pan dries out before the orzo and squash are tender, add a splash or two of water.
+                    
+                    Step 4
+                    Remove pan from heat and stir in Parmesan. Taste and add more salt if needed, and a squeeze of lemon juice if the dish needs brightness. Dollop with ricotta if using, and sprinkle with more grated Parmesan and black pepper just before serving, garnishing the top with more red-pepper flakes and sage.
+                </div>
+            </article>
+            <article>
+                <h1>From our video series</h1>
+                <h2>Cranberry Curd Tart</h2>
+                <cite><a href="https://cooking.nytimes.com/watch/november-bake-time-cranberry-curd-tart">By Bake Time</a></cite>
+                <div>
+                    <em>1.5 hours / 3 hours 40 minutes / 4.5 hours</em>
+                    <h3>Ingredients</h3>
+                    Yield: 8 to 10 servings
+                    <h4>FOR THE HAZELNUT CRUST</h4>
+                    <ul>
+                        <li>1 ¼ cups/180 grams raw hazelnuts</li>
+                        <li>1 cup/125 grams rice flour</li>
+                        <li>¼ teaspoon salt</li>
+                        <li>½ cup/112 grams sugar</li>
+                        <li>6 tablespoons/85 grams softened butter, more as necessary</li>
+                    </ul>
+                    <h4>FOR THE CRANBERRY CURD</h4>
+                    <ul>
+                        <li>12 ounces/340 grams cranberries</li>
+                        <li>1 cup/225 grams sugar</li>
+                        <li>Peel (orange part only) and juice of 1 orange (about ½ cup)</li>
+                        <li>4 ounces/113 grams softened butter (1 stick)</li>
+                        <li>2 eggs plus 2 egg yolks</li>
+                    </ul>
+                    <h3>Preparation</h3>
+
+                    Step 1
+                    Make the crust: Heat oven to 325 degrees. Put hazelnuts on a baking sheet and roast for 10 to 15 minutes, until skins darken and crack. Put roasted nuts in a clean towel and rub off skins. Discard skins and let nuts cool.
+                    
+                    Step 2
+                    In a food processor, grind nuts with half the rice flour until mixture resembles coarse cornmeal. Add remaining rice flour and salt and pulse briefly.
+                    
+                    Step 3
+                    Cream sugar and butter in a mixing bowl with a wooden spoon for a minute or two until pale and thick. Add nut mixture and combine until dough comes together. If it seems crumbly, add 1 to 2 tablespoons softened butter or a little cold water.
+                    
+                    Step 4
+                    Press dough evenly into a 10-inch tart pan; use half the dough for the sides and half for the bottom. Prick bottom with a fork and freeze for 30 minutes (or several days if desired).
+                    
+                    Step 5
+                    Heat oven to 350 degrees. Bake chilled tart shell about 15 minutes until lightly brown. Cool.
+                    
+                    Step 6
+                    While the crust bakes and cools, make the cranberry curd: Put cranberries, sugar and orange juice and peel in a saucepan over medium heat. Simmer until cranberries have popped and softened, about 10 minutes. Transfer to a food mill or medium mesh sieve and press cooking liquid and solids into a bowl. (Alternatively, for the most vibrant color, purée the cooked cranberry and orange mixture with an immersion blender or in a food processor or blender. Press through a fine-mesh sieve.) Whisk the butter into the warm liquid.
+                    
+                    Step 7
+                    Put eggs and egg yolks into a bowl and beat lightly. Slowly whisk a cup of warm cranberry liquid into the eggs to temper, then combine both and whisk together. Wipe out pot if necessary, return liquid to pot and cook over low heat until nearly bubbling and thickened, about 10 minutes. If using immediately, let cool to room temperature. If working ahead, cool to room temperature, cover with plastic wrap (press wrap against curd) and refrigerate. (Curd may be cooked up to 1 day ahead.)
+                    
+                    Step 8
+                    Pour cooled cranberry curd into the cooled prebaked tart shell and smooth top with a spatula. Bake at 350 degrees for 10 minutes to set curd. Cool on a rack. Store at room temperature for up to 2 days.
+
+                    Tip
+                    Frozen cranberries can be used to make the curd. 
+                </div>
+            </article>
+            <article>
+                <h1>The Best Meal of the Year</h1>
+                <h2>Cheesy Hasselback Potato Gratin</h2>
+                <cite><a href="https://cooking.nytimes.com/recipes/1017724-cheesy-hasselback-potato-gratin">By J. Kenji López-Alt & Emily Weinstein</a></cite>
+                <div>
+                    <em>2 hours</em>
+                    <h3>Ingredients</h3>
+                    Yield: 6 servings
+                    <ul>
+                        <li>3 ounces finely grated Gruyère or comté cheese</li>
+                        <li>2 ounces finely grated Parmesan</li>
+                        <li>2 cups heavy cream</li>
+                        <li>2 medium cloves garlic, minced</li>
+                        <li>1 tablespoon fresh thyme leaves, roughly chopped</li>
+                        <li>Kosher salt and black pepper</li>
+                        <li>4 to 4 ½ pounds russet potatoes, peeled and sliced ⅛-inch thick on a mandoline slicer (7 to 8 medium, see Tip)</li>
+                        <li>2 tablespoons unsalted butter</li>
+                    </ul>
+                    <h3>Preparation</h3>
+                    Step 1
+                    Adjust oven rack to middle position and heat oven to 400 degrees. Combine cheeses in a large bowl. Transfer ⅓ of cheese mixture to a separate bowl and set aside. Add cream, garlic and thyme to cheese mixture. Season generously with salt and pepper. Add potato slices and toss with your hands until every slice is coated with cream mixture, making sure to separate any slices that are sticking together to get the cream mixture in between them.
+                    
+                    Step 2
+                    Grease a 2-quart casserole dish with butter. Pick up a handful of potatoes, organizing them into a neat stack, and lay them in the casserole dish with their edges aligned vertically. Continue placing potatoes in the dish, working around the perimeter and into the center until all the potatoes have been added. The potatoes should be very tightly packed. If necessary, slice an additional potato, coat with cream mixture, and add to casserole.
+                    
+                    Step 3
+                    Pour the excess cream/cheese mixture evenly over the potatoes until the mixture comes halfway up the sides of the casserole. You may not need all the excess liquid.
+                    
+                    Step 4
+                    Cover dish tightly with foil and transfer to the oven. Bake for 30 minutes. Remove foil and continue baking until the top is pale golden brown, about 30 minutes longer. Carefully remove from oven, sprinkle with remaining cheese, and return to oven. Bake until deep golden brown and crisp on top, about 30 minutes longer. Remove from oven, let rest for a few minutes, and serve.
+
+                    Tip
+                    Because of variation in the shape of potatoes, the amount of potato that will fit into a single casserole dish varies. Longer, thinner potatoes will fill a dish more than shorter, rounder potatoes. When purchasing potatoes, buy a few extra in order to fill the dish if necessary. Depending on exact shape and size of potatoes and casserole dish, you may not need all of the cream mixture.
+                </div>
+            </article>
+        </main>
+        <footer>
+            <small>Skrypnyk Mykhailo <em>11/09/2026</em></small>
+        </footer>
+    </div>
+</body>
+</html>
